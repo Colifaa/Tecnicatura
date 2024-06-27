@@ -2,7 +2,7 @@
 
 ### Comandos Básicos en la Terminal
 
-- `pwd` - Vemos la ruta de la carpeta en la que estamos
+<sub> - `pwd` - Vemos la ruta de la carpeta en la que estamos <sub/>
 - `cd` - Es para navegar a una carpeta: change directory -> cambiar de directorio
 - `cd /` - Nos lleva al home, en la raíz del disco
 - `cd ~` - La virgulilla significa que estamos en el lugar de los documentos o del usuario
