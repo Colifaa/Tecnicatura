@@ -2,7 +2,7 @@
 
 ### Comandos Básicos en la Terminal
 
-<sub> - `pwd` - Vemos la ruta de la carpeta en la que estamos <sub/>
+- `pwd` - Vemos la ruta de la carpeta en la que estamos 
 - `cd` - Es para navegar a una carpeta: change directory -> cambiar de directorio
 - `cd /` - Nos lleva al home, en la raíz del disco
 - `cd ~` - La virgulilla significa que estamos en el lugar de los documentos o del usuario
@@ -619,28 +619,29 @@ Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requ
 
 Profesor Ariel Betancud
 
-CLASE 8 MIÉRCOLES 5 DE JUNIO DEL 2024
-Fusión de ramas con Git merge parte 10
+# CLASE 8 MIÉRCOLES 5 DE JUNIO DEL 2024
+## Fusión de ramas con Git merge parte 10
 
-La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando git merge permite integrar líneas de desarrollo independientes generadas por git branch en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
+La fusión en Git es la forma en que este sistema une un historial bifurcado. El comando `git merge` permite integrar líneas de desarrollo independientes generadas por `git branch` en una sola rama. Con este comando, podemos crear un nuevo commit que combina dos ramas o branches: la rama actual y la rama que se indica después del comando.
 
-Estos comandos de fusión del merge afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar git checkout para seleccionar la rama actual y git branch -d para eliminar la rama de destino obsoleta.
+Estos comandos de fusión del `merge` afectan solo a la rama actual y no a la rama de destino. Por lo tanto, te recomendamos utilizar `git checkout` para seleccionar la rama actual y `git branch -d` para eliminar la rama de destino obsoleta.
 
-Funcionamiento de Git merge
+### Funcionamiento de Git merge
 
 Git merge fusiona secuencias de confirmaciones en un solo historial, generalmente para combinar dos ramas. Busca una confirmación de base común y genera una confirmación de fusión que representa la combinación de las dos ramas hasta el resultado final.
 
-¿Cómo unir dos ramas en git?
+#### ¿Cómo unir dos ramas en git?
 
-Ahora bien, para combinar ramas en tu repositorio local, usa git checkout para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea git merge y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.
+Ahora bien, para combinar ramas en tu repositorio local, usa `git checkout` para cambiar a la rama donde deseas fusionar. Por lo general, esta es la rama principal. Luego, emplea `git merge` y especifica el nombre de la otra rama que deseas traer a esta rama. Ten en cuenta que esto es una combinación de avance rápido.
 
-¿Cómo realizar un merge en git?
+#### ¿Cómo realizar un merge en git?
 
-Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando git merge seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama segunda, usa este comando:
+Para hacer un merge en Git, primero asegúrate de estar en la rama correcta. Después, usa el comando `git merge` seguido del nombre de la rama que quieres combinar. Por ejemplo, si quieres crear un nuevo commit en la rama master con los cambios de la rama segunda, usa este comando:
 
+```bash
 git checkout master
-
 git merge segunda
+
 Es importante tener en cuenta que en caso de haber conflictos, debes guardar tus cambios antes de hacer git checkout para evitar perder tu trabajo. También es recomendable emplear los comandos básicos de GitHub, como git fetch, git push y git pull, para mantener actualizado tu repositorio.
 
 En este ejemplo, vamos a crear un nuevo commit en la rama master combinando los cambios de una rama llamada segunda: Otra opción es crear un nuevo commit en la rama segunda combinando los cambios de cualquier otra rama:
